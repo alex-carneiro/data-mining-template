@@ -14,9 +14,9 @@ petal_lenth = "petal_length=" + input("Petal length: ")
 petal_width = "petal_width=" + input("Petal width: ")
 
 url_path = 'http://localhost:5000/api?%s&%s&%s&%s'%(sepal_lenth,
-                                             sepal_width,
-                                             petal_lenth,
-                                             petal_width)
+                                                    sepal_width,
+                                                    petal_lenth,
+                                                    petal_width)
 
 with request.urlopen(url_path) as response:
     result = str(response.read())

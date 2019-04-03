@@ -13,6 +13,7 @@ from sklearn.preprocessing import MinMaxScaler
 from sklearn.pipeline import Pipeline
 from sklearn.externals import joblib
 
+
 def read_input_attributes(filename="attributes.txt"):
     """Função de leitura do arquivo com os nomes dos atributos"""
     
@@ -52,6 +53,9 @@ data = pd.read_csv("iris.data")
 
 model = Pipeline([("norm", MinMaxScaler()),
                   ("classifier", LogisticRegression())])
+
+# Selecione o que deseja fazer: treinar/testar e/ou gerar um modelo
+# (des)comentando as funções abaixo
 
 test_model(data, model)
 #create_model(data, model)

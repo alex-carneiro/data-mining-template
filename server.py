@@ -13,8 +13,8 @@ from flask import Flask, request
 
 from model_build import read_input_attributes
 
-app = Flask("Data Mining API")
 
+app = Flask("Data Mining API")
 
 @app.route("/")
 def hello():
